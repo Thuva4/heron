@@ -1,19 +1,23 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 
-# Copyright 2016 Twitter. All rights reserved.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
 #
 #    http://www.apache.org/licenses/LICENSE-2.0
 #
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+
 ''' api_constants.py: defines api constants for topology config'''
 
 ####################################################################################################
@@ -71,8 +75,12 @@ TOPOLOGY_CONTAINER_PADDING_PERCENTAGE = "topology.container.padding.percentage"
 # Amount of ram padding per container.
 TOPOLOGY_CONTAINER_RAM_PADDING = "topology.container.ram.padding"
 
+# Per component cpu requirement.
+TOPOLOGY_COMPONENT_CPUMAP = "topology.component.cpumap"
 # Per component ram requirement.
 TOPOLOGY_COMPONENT_RAMMAP = "topology.component.rammap"
+# Per component disk requirement.
+TOPOLOGY_COMPONENT_DISKMAP = "topology.component.diskmap"
 # Name of the topology, automatically set by Heron when the topology is submitted.
 TOPOLOGY_NAME = "topology.name"
 # Name of the team which owns this topology.
@@ -87,5 +95,5 @@ TOPOLOGY_PROJECT_NAME = "topology.project.name"
 # Any user defined classpath that needs to be passed to instances should be set in to config
 # through this key.
 TOPOLOGY_ADDITIONAL_CLASSPATH = "topology.additional.classpath"
-# The per component output tuple per second in this topology.
-TOPOLOGY_COMPONENT_OUTPUT_TPS = "topology.component.output.tps"
+# The per component output bytes per second in this topology.
+TOPOLOGY_COMPONENT_OUTPUT_BPS = "topology.component.output.bps"
